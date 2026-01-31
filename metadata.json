@@ -1,0 +1,8 @@
+{
+  "name": "GourmetAR",
+  "description": "An augmented reality menu application helping diners visualize food portion sizes and appearance before ordering, enhanced with Gemini AI for detailed culinary insights.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

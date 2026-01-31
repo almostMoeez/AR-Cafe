@@ -1,0 +1,11 @@
+Model Information:
+* title:	Semla
+* source:	https://sketchfab.com/3d-models/semla-bb7977c3fc9b45b3bb75c5a6f6ff899d
+* author:	Björn (https://sketchfab.com/RamihrdusModels)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Semla" (https://sketchfab.com/3d-models/semla-bb7977c3fc9b45b3bb75c5a6f6ff899d) by Björn (https://sketchfab.com/RamihrdusModels) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
