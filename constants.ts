@@ -11,7 +11,7 @@ const AVOCADO_USDZ_URL = 'https://cdn.jsdelivr.net/gh/google/model-viewer@master
 
 // For Semla: local GLTF for 3D preview. AR requires publicly hosted GLB.
 // To enable AR for Semla, host the model on a CDN or convert to GLB and upload.
-const SEMLA_MODEL_URL = '/scene.gltf';
+const SEMLA_MODEL_URL = 'https://raw.githubusercontent.com/almostMoeez/AR-Cafe/refs/heads/main/public/scene.gltf';
 
 export const MENU_ITEMS: FoodItem[] = [
   {
