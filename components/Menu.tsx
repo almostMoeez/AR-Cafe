@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Search, SlidersHorizontal } from 'lucide-react';
 import { CATEGORIES, MENU_ITEMS } from '../constants';
 import { FoodCategory, FoodItem } from '../types';
 
@@ -9,12 +8,10 @@ interface MenuProps {
 
 const Menu: React.FC<MenuProps> = ({ onSelectItem }) => {
   const [activeCategory, setActiveCategory] = useState<FoodCategory | 'All'>('All');
-  const [searchQuery, setSearchQuery] = useState('');
 
   const filteredItems = MENU_ITEMS.filter(item => {
     const matchesCategory = activeCategory === 'All' || item.category === activeCategory;
-    const matchesSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
+    return matchesCategory;
   });
 
   return (
@@ -23,24 +20,12 @@ const Menu: React.FC<MenuProps> = ({ onSelectItem }) => {
       <header className="bg-white px-6 pt-6 pb-4 shadow-sm z-10 sticky top-0">
         <div className="flex justify-between items-center mb-6">
           <div>
-            <h1 className="text-2xl font-bold text-gray-900">GourmetAR</h1>
+            <h1 className="text-2xl font-bold text-gray-900">AR Cafe</h1>
             <p className="text-sm text-gray-500">See it before you eat it</p>
           </div>
           <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 font-bold">
-            G
+            A
           </div>
-        </div>
-
-        {/* Search */}
-        <div className="relative mb-6">
-          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
-          <input 
-            type="text"
-            placeholder="Search menu..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full bg-gray-100 text-gray-900 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20"
-          />
         </div>
 
         {/* Categories */}
